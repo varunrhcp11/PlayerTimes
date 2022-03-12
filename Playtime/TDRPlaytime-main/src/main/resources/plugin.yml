@@ -1,0 +1,43 @@
+name: TDRPlaytime
+version: ${project.version}
+main: nl.thedutchruben.playtime.Playtime
+authors: [ TheDutchRuben ]
+softdepend:
+  - PlaceholderApi
+description: Playtime plugin with milestone support
+website: www.thedutchruben.nl/nl/projects/tdrplaytime
+commands:
+  playtime:
+    aliases:
+      - ptime
+      - playertime
+      - onlinetime
+    description: Main play time command
+    permission: playtime.playtime
+  milestone:
+    aliases:
+      - mstone
+      - miliestone
+    description: Setup the milestones of the playtime plugin
+    permission: playtime.milestone
+  repeatingmilestone:
+    aliases:
+      - rmstone
+      - rmiliestone
+    description: Setup the repeating milestones of the playtime plugin
+    permission: playtime.repeatingmilestone
+permissions:
+  playtime.playtime:
+    default: true
+  playtime.playtime.other:
+    default: op
+  playtime.playtime.reset:
+    default: op
+  playtime.playtime.top:
+    default: op
+  playtime.milestone:
+    default: op
+  playtime.milestone.additem:
+    default: op
+  playtime.milestone.addcommand:
+    default: op
